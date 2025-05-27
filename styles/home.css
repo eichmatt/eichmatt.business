@@ -1,0 +1,116 @@
+/* Home page specific styles */
+.photo-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.category-list li {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid #e0e0e0;
+    position: relative;
+    height: auto;
+    min-height: 300px;
+}
+
+.category-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.category-list li:hover::before {
+    transform: scale(1.05);
+}
+
+.category-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
+    border-color: #3498db;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding-top: 300px;
+}
+
+.category-list h3 {
+    margin: 0;
+    padding: 0.5rem 1.5rem 0.25rem;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.category-list li:hover h3 {
+    color: #3498db;
+}
+
+.category-list p {
+    margin: 0;
+    padding: 0 1.5rem 0.25rem;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.update-time {
+    display: block;
+    color: #95a5a6;
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 0.25rem 1.5rem 0.75rem;
+    border-top: 1px solid #ecf0f1;
+    margin-top: 0.25rem;
+}
+
+/* Background images for each category */
+.category-list li:nth-child(1)::before {
+    background-image: url('../img/ảnh2/jpg.jpg');
+}
+
+.category-list li:nth-child(2)::before {
+    background-image: url('../img/ảnh1/jpg1.jpg');
+}
+
+.category-list li:nth-child(3)::before {
+    background-image: url('../img/ảnh3/jpg.jpg');
+}
+
+.category-list li:nth-child(4)::before {
+    background-image: url('../img/ảnh4/jpg.jpg');
+}
+
+.category-list li:nth-child(5)::before {
+    background-image: url('../img/ảnh5/jpg4.jpg');
+}
+
+.category-list li:nth-child(6)::before {
+    background-image: url('../img/ảnh6/jpg5.jpg');
+} 

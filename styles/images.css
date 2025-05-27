@@ -1,0 +1,43 @@
+/* Image styles */
+.category-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.category-list li:hover::before {
+    transform: scale(1.05);
+}
+
+/* Background images for each category */
+.category-list li:nth-child(1)::before {
+    background-image: url('../img/ảnh2/jpg.jpg');
+}
+
+.category-list li:nth-child(2)::before {
+    background-image: url('../img/ảnh2/jpg1.jpg');
+}
+
+.category-list li:nth-child(3)::before {
+    background-image: url('../img/ảnh2/jpg2.jpg');
+}
+
+.category-list li:nth-child(4)::before {
+    background-image: url('../img/ảnh2/jpg3.jpg');
+}
+
+.category-list li:nth-child(5)::before {
+    background-image: url('../img/ảnh2/jpg4.jpg');
+}
+
+.category-list li:nth-child(6)::before {
+    background-image: url('../img/ảnh2/jpg5.jpg');
+} 
